@@ -1,7 +1,7 @@
 from typing import Union, Tuple
 
-from src.LwwTimedObj import LwwTimedObj
-from src.lww_graph.edge.LwwEdge import LwwEdge
+from lww_graph.LwwTimedObj import LwwTimedObj
+from lww_graph.lww_graph.edge.LwwEdge import LwwEdge
 
 
 class LwwTimedEdge(LwwTimedObj):

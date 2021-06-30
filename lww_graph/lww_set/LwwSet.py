@@ -1,5 +1,5 @@
 from typing import Dict, List, Union
-from src.LwwTimedObj import LwwTimedObj
+from lww_graph.LwwTimedObj import LwwTimedObj
 
 
 class LwwSet(object):

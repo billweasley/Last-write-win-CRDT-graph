@@ -1,6 +1,6 @@
 from typing import Dict
 
-from src.lww_set.LwwSet import LwwSet
+from lww_graph.lww_set.LwwSet import LwwSet
 
 
 class LwwVertexSet(LwwSet):

@@ -1,9 +1,9 @@
 from typing import Dict, List
 
-from src.lww_graph.edge.LwwEdge import LwwEdge
-from src.lww_graph.edge.LwwTimedEdge import LwwTimedEdge
-from src.lww_graph.vertex.LwwVertexSet import LwwVertexSet
-from src.lww_set.LwwSet import LwwSet
+from lww_graph.lww_graph.edge.LwwEdge import LwwEdge
+from lww_graph.lww_graph.edge.LwwTimedEdge import LwwTimedEdge
+from lww_graph.lww_graph.vertex.LwwVertexSet import LwwVertexSet
+from lww_graph.lww_set.LwwSet import LwwSet
 
 
 class LwwEdgeSet(LwwSet):

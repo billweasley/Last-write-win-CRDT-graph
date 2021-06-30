@@ -1,7 +1,7 @@
 import unittest
 
-from src.LwwTimedObj import LwwTimedObj
-from src.lww_set.LwwSet import LwwSet
+from lww_graph.LwwTimedObj import LwwTimedObj
+from lww_graph.lww_set.LwwSet import LwwSet
 
 
 class LwwSetTest(unittest.TestCase):

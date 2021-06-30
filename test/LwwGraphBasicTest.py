@@ -1,8 +1,8 @@
 import unittest
 
-from src.lww_graph.LwwDiGraph import LwwDiGraph
-from src.lww_graph.edge.LwwTimedEdge import LwwTimedEdge
-from src.lww_graph.vertex.LwwTimedVertex import LwwTimedVertex
+from lww_graph.lww_graph.LwwDiGraph import LwwDiGraph
+from lww_graph.lww_graph.edge.LwwTimedEdge import LwwTimedEdge
+from lww_graph.lww_graph.vertex.LwwTimedVertex import LwwTimedVertex
 
 
 class LwwGraphBasicTest(unittest.TestCase):

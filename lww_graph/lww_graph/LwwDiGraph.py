@@ -1,10 +1,10 @@
 from typing import List, Set
 
-from src.lww_graph.edge.LwwEdge import LwwEdge
-from src.lww_graph.edge.LwwEdgeSet import LwwEdgeSet
-from src.lww_graph.edge.LwwTimedEdge import LwwTimedEdge
-from src.lww_graph.vertex.LwwTimedVertex import LwwTimedVertex
-from src.lww_graph.vertex.LwwVertexSet import LwwVertexSet
+from lww_graph.lww_graph.edge.LwwEdge import LwwEdge
+from lww_graph.lww_graph.edge.LwwEdgeSet import LwwEdgeSet
+from lww_graph.lww_graph.edge.LwwTimedEdge import LwwTimedEdge
+from lww_graph.lww_graph.vertex.LwwTimedVertex import LwwTimedVertex
+from lww_graph.lww_graph.vertex.LwwVertexSet import LwwVertexSet
 
 
 class LwwDiGraph(object):
@@ -143,13 +143,13 @@ class LwwDiGraph(object):
 
     def list_all_path(self, src: int, target: int) -> List[List[int]]:
         """
-        List all path from src to target.
+        List all path from lww_graph to target.
 
         Here a distinct path is no loop and self-loop.
 
         :param src: an integer, the source vertex id that needs to look up.
         :param target: an integer, the target vertex id that needs to look up.
-        :return: A list of list of integer. Where each list in the list is a path from src to target.
+        :return: A list of list of integer. Where each list in the list is a path from lww_graph to target.
         """
         result = []
         if not (self.vertex_exist(src) and self.vertex_exist(target)):
@@ -167,7 +167,7 @@ class LwwDiGraph(object):
         :param visited: A mark set to break circled visit.
         :param current: Current path.
         :param result: Final result.
-        :return: A list of list of integer. Where each list in the list is a path from src to target.
+        :return: A list of list of integer. Where each list in the list is a path from lww_graph to target.
         """
         if src == target:
             result.append(current)

@@ -1,7 +1,7 @@
 class LwwEdge(object):
 
     def __init__(self, src: int, target: int):
-        assert src != target, "You cannot create edge with same src and target value."
+        assert src != target, "You cannot create edge with same lww_graph and target value."
         self.src = src
         self.target = target
 
