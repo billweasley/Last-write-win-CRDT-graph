@@ -92,6 +92,11 @@ python -m unittest test.LwwSetTest
 ```
 
 ## Install and Run
+```
+cd Lww-state-graph
+pip install .
+```
+
 ```python
 from lww_graph.lww_graph.LwwDiGraph import LwwDiGraph
 from lww_graph.lww_graph.edge.LwwTimedEdge import LwwTimedEdge
@@ -134,9 +139,18 @@ graph.vertex_count()
 graph.connected_vertices(1)
 >> [3, 2]
 
+another_graph = LwwDiGraph() \
+    .add_vertex(LwwTimedVertex(6, timestamp=1)) \
+    .add_vertex(LwwTimedVertex(7, timestamp=1)) \
+    .add_edge(LwwTimedEdge((6, 7), timestamp=3))
+graph.list_all_path(1, 7)
+>> []
+graph.merge(another_graph)
+>> <lww_graph.lww_graph.LwwDiGraph.LwwDiGraph object at 0x000002593FFBBB50>
+graph.list_all_path(1, 7)
+>> [[1, 3, 2, 4, 6, 7], [1, 3, 2, 4, 5, 6, 7], [1, 2, 4, 6, 7], [1, 2, 4, 5, 6, 7]]
+
 ```
-    
-    
 
   
 
